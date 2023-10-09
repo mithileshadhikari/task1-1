@@ -89,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // echo "ok";
     }
 
-    $sql = "INSERT INTO info (firstname, lastname, district, subdistrict, village, zip)
+    $sql = "INSERT INTO info (firstname, lastname, district, subdistrict, village, zip)"
 VALUES ('$firstname', '$lastname', '$district','$subdistrict', '$village','$zip')";
 
 if (mysqli_query($conn, $sql)) {
